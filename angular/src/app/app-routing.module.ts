@@ -1,11 +1,7 @@
 import { NgModule } from '@angular/core';
-import { HttpClientModule, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
-import { TestApisComponent } from './test-apis/test-apis.component';
 
-
-const routes: Routes = [{path:'test',component: TestApisComponent}];
-
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

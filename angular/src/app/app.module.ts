@@ -1,19 +1,20 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TestApisComponent } from './test-apis/test-apis.component';
+import { CRUDComponent } from './crud/crud.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestApisComponent
+    CRUDComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
